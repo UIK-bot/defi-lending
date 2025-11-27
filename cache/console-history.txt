@@ -1,3 +1,29 @@
+console.log("测试结果:", result);
+const result = await contract.positions(accounts[0].address);
+const accounts = await hre.ethers.getSigners();
+// 或者直接调用测试
+console.log("positions 选择器:", selector);
+const selector = contract.interface.getSighash("positions");
+// 获取 positions 函数的选择器
+const contract = await hre.ethers.getContractAt("Lending", "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512");
+const hre = require("hardhat");
+// 正确的写法
+console.log("positions 选择器:", selector);
+const selector = ethers.utils.id("positions(address)").slice(0, 10);
+const { ethers } = require("ethers");
+console.log("positions 选择器:", selector);
+const selector = ethers.utils.id("positions(address)").slice(0, 10);
+const { ethers } = require("ethers");
+// 计算 positions(address) 的准确选择器
+npx hardhat console --network localhost
+// 或者列出所有函数
+console.log("collateralOf 的选择器:", contract.interface.getSighash("collateralOf"));
+const contract = await ethers.getContractFactory("LendingContract");
+// 获取准确的函数选择器
+const lendingAddress = "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512";
+const user = "0xBcd4042DE499D14e55001CcbB24a551F3b954096";
+const lending = await ethers.getContractAt("Lending", lendingAddress);
+const lendingAddress = "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512";
 0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512
 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
-0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512
+0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512F0512

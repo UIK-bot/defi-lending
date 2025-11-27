@@ -11,4 +11,10 @@ module.exports = {
       }
     }
   },
+  
+  networks: {
+    hardhat: {
+      chainId: 31337,   // wagmi 默认期望的 Hardhat Chain ID
+    },
+  },
 };
